@@ -1,0 +1,28 @@
+// logic for anemia
+
+appending data inside of Result 
+
+result={
+	rbc:null,
+        hemoglobin:null,
+        hematocrit:null,
+        wbc:null,
+        platelet:null,
+        iron:null,
+        b12:null,
+        folate:null,
+
+        ulcers:null,
+        redTongue:null,
+        muscleWeakness:null
+
+}
+
+
+if (3.93<rbc || rbc>5){
+    rbc_result=3.93<rbc?"low" :"high"
+	
+}
+
+
+

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#f1f1f1;
+}
+.container-fluid h1{
+   font-family: 'Roboto', sans-serif;
+   -webkit-text-fill-color: #000000; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+   font-size: 3.4rem;
+   
+   text-transform: uppercase;
+   border-bottom: 2px solid black;
+
+}
+.container{
+    position: relative;
+    top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.text-title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    -webkit-text-fill-color: #f1f1f1; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    border-bottom: 1.5px solid black;
+    padding: 4px 15px;
+}
+/* .c3{
+
+} */
+.para{
+    /* text-align: center; */
+    position: relative;
+    left: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif,
+}
+.para:last-child{
+    position: relative;
+    left:4px;
+}
+.para span{
+    font-weight: bold;
+    color: green;
+}
+span .great{
+    color: blue;
+    font-weight: bold;
+}
+.notgood{
+    color:yellowgreen;
+    font-weight: bold;
+}

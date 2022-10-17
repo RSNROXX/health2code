@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anemia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="anemia.css">   -->
+    <link rel="stylesheet" type="text/css" href="/css/anemia.css">
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+         <h1 class="text-center">Anemia</h1>
+         <form action="/saveData" method="POST">
+         <div class="cl">
+             <h2 class="text">GENERAL</h2>
+             <label for="rbc" class="mt-3">Red Blood Cell(RBC)Z:</label>
+             <input type="text" name="rbc" class="form-control mt-1" type="number" placeholder="(million/mm3)" required>
+
+             <label for="hemoglobin" class="mt-3">Hemoglobin:</label>
+             <input type="text" name="hemoglobin" class="form-control mt-1" type="number" placeholder="(g/dL)"required >
+
+             <label for="hematocrit" class="mt-3">Hematocrit:</label>
+             <input type="text" name="hematocrit" class="form-control mt-1" type="number" placeholder="(%)" required>
+
+             <label for="wbc" class="mt-3">White Blood Cell(WBC):</label>
+             <input type="text" name="wbc" class="form-control mt-1" type="number"  placeholder="(thousand/mm3)" required>
+
+             <label for="platelet" class="mt-3">Platelet:</label>
+             <input type="text" name="platelet" class="form-control mt-1" type="number" placeholder="(thousand/mm3)" required>
+         </div>
+         <div class="c2">
+            <h2 class="text">Deficiency</h2>
+             <label for="iron" class="mt-3">Iron:</label>
+             <input type="text" name="iron" class="form-control mt-1" type="number" placeholder="(mcg)" required>
+            
+             <label for="b12" class="mt-3">B-12:</label>
+             <input type="text" name="b12" class="form-control mt-1"type="number"  placeholder="(mcg)" required>
+
+             <label for="folate" class="mt-3">Folate:</label>
+             <input type="text" name="folate" class="form-control mt-1" type="number" placeholder="(mcg DFE)" required>
+         </div>
+         <div class="c3">
+            <h2 class="text">Symptoms</h2>
+             <div class="ch1">
+             <label for="ulcers" class="mt-3">Mouth Ulcers:</label>
+             <input type="checkbox" name="ulcers" id="ulcers"   value="Mouth Ulcers" class=" mt-1 checkbox" >
+             </div><br>
+             <div class="ch1">
+             <label for="redTongue" class="mt-3">Red Tongue:</label>
+             <input type="checkbox" name="redTongue" value="Red Tongue" class="mt-1 checkbox"  >
+             </div><br>
+             <div class="ch1">
+             <label for="muscleWeakness" class="mt-3">Muscle Weakness:</label>
+             <input type="checkbox" name="muscleWeakness" value="Muscle Weakness" class=" mt-1 checkbox"  >
+            </div>
+         </div>
+         <button type="submit" class="btn btn-danger" id="button">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

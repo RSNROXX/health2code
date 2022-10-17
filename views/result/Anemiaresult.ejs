@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/result.css">
+    <title>Result</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+       <h1 class="header-title text-center">Final Report</h1>
+        <div class="container">
+        <div class="c1">
+            <h2 class="text-title">Deficiency</h2>
+
+            <% if (result1[0]!=null) {%>
+                <% result1.forEach(function(item){%>
+
+                    <p class="para">
+                        <%=item%>
+                    </p>
+
+
+
+                    <%})%>
+                        <%}else{%>
+                            <p>Not found</p>
+                            <%}%>
+        </div>
+        <!-- Neutral -->
+        <div class="c2">
+
+            <h2 class="text-title">Normal</h2>
+            <% if (result2[0]!=null) {%>
+                <% result2.forEach(function(item){%>
+
+                    <p class="para">
+                        <%=item%>
+                    </p>
+
+                    <%})%>
+                        <%}else{%>
+                            <p>Not found</p>
+                            <%}%>
+        </div>
+        <div class="c3">
+           <h2 class="text-title">Result</h2>
+           <% if ((result.iron=='Normal') && (result.b12== "Normal") && (result.folate== "Normal")){%>
+                 <p class="para"><span class="great">Great!</span> All good</p>
+
+          <%} else if ((result.iron!='Normal') && (result.b12== "Normal") && (result.folate== "Normal")){%> 
+            <p class="para">😥!Trouble</p>
+            
+            <%}else if ((result.iron!='Normal') && (result.b12!= "Normal") && (result.folate== "Normal")){%>
+                <p class="para"><span class="notgood">Oops!</span> Not good</p>
+                <%}else{%>
+                    <p class="para"><span>Danger!!</span> Visit nearby clinic</p>
+                    <%}%>
+
+        </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
