@@ -859,7 +859,7 @@ app.get("/user/register", (req, res) => {
   res.render("register/register.ejs");
 });
 
-app.listen(8000, () => {
+app.listen(process.env.PORT, () => {
   console.log("running on port 8000");
 });
 
